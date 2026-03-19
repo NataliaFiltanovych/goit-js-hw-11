@@ -28,9 +28,10 @@ refs.formEl.addEventListener('submit', e => {
   }
   clearGallery();
   showLoader();
+
   getImagesByQuery(query)
     .then(response => {
-      const images = response.data.hits;
+      const images = response.hits;
       if (images.length === 0) {
         iziToast.show({
           message:

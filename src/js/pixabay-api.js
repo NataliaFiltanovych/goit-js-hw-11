@@ -13,5 +13,5 @@ export function getImagesByQuery(query) {
 
   const url = BASE_URL + END_POINT + '?' + params;
 
-  return axios.get(url);
+  return axios.get(url).then(res => res.data);
 }
