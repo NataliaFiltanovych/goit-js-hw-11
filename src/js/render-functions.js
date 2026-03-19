@@ -56,3 +56,11 @@ export function clearGallery() {
   const listElem = document.querySelector('.gallery');
   listElem.innerHTML = '';
 }
+
+export function showLoader() {
+  document.querySelector('.js-loader').classList.remove('hidden');
+}
+
+export function hideLoader() {
+  document.querySelector('.js-loader').classList.add('hidden');
+}

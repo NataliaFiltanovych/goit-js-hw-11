@@ -10,4 +10,6 @@
 @import url('./container.css');
 
 /* Sections style */
+@import url('./form.css');
 @import url('./gallery.css');
+@import url('./loader.css');
